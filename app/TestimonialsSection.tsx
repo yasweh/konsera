@@ -14,19 +14,19 @@ export const TestimonialsSection = (): JSX.Element => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      image: "/testi.png",
+      image: "/testi1.jpg",
       name: "Verbi Meliala",
       title: "Promotor Konser KPop",
       testimonialText: "Konsera bikin pengalaman nonton konser jadi lebih seru! Gampang cari info event, beli tiket, sampai ketemu teman baru yang satu selera musik.",
-      starsImage: "/stars-png.png",
+      starsImage: "/5-stars.png",
     },
     {
       id: 2,
-      image: "/testi2.png",
+      image: "/testi2.jpg",
       name: "Andi Pratama",
       title: "Penggemar Musik Rock",
       testimonialText: "Fitur Live Crowd View sangat membantu! Bisa tahu kondisi venue sebelum konser dimulai. Recommended banget buat concert-goers!",
-      starsImage: "/stars-png-2.png",
+      starsImage: "/5-stars.png",
     },
   ];
 
@@ -43,20 +43,20 @@ export const TestimonialsSection = (): JSX.Element => {
             className="w-full max-w-[500px] bg-[#001560] rounded-[45px] p-8"
           >
             <div className="flex items-start gap-6 mb-6">
-              <div className="w-32 h-40 shrink-0 bg-white rounded-[13px] overflow-hidden">
+              <div className="w-32 h-32 shrink-0 bg-white rounded-[13px] overflow-hidden">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-fit object-cover"
                   alt={testimonial.name}
                   src={testimonial.image}
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <p className="font-['Plus_Jakarta_Sans',Helvetica] font-normal text-white text-base">
+                <p className="font-['Plus_Jakarta_Sans',Helvetica] font-normal text-white text-xl">
                   {testimonial.name}
                 </p>
                 <div
-                  className="w-[116px] h-5 bg-cover bg-center"
+                  className="w-[166px] h-6 bg-cover bg-center"
                   style={{ backgroundImage: `url(${testimonial.starsImage})` }}
                   role="img"
                   aria-label="5 star rating"

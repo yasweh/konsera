@@ -5,18 +5,18 @@ import type { JSX } from "react";
 export const CallToActionSection = (): JSX.Element => {
   return (
     <section
-      className="relative w-full h-[916px]"
+      className="relative w-full h-[680px]"
       aria-labelledby="cta-heading"
       id="unduh"
     >
       <img
-        className="absolute top-[285px] left-1/2 w-[480px] h-[631px] object-cover"
+        className="absolute top-[50px] left-1/2 w-[480px] h-[631px] object-cover"
         alt="Konsera mobile app interface showing concert listings"
         src="/cta1.png"
       />
 
       <img
-        className="absolute top-[420px] left-[calc(50%+286px)] w-[432px] h-[496px] object-cover"
+        className="absolute top-[185px] left-[calc(50%+286px)] w-[432px] h-[496px] object-cover"
         alt="Konsera mobile app interface showing event details"
         src="/cta2.png"
       />
